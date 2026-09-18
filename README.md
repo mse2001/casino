@@ -3,8 +3,6 @@
 The **Hungarian two-player version** of Cassino, with a 52-card French deck —
 in the browser, you against the computer.
 
-There is no code here yet. There are tests.
-
 ## What to build
 
 1. A module `casino` that passes the tests in `tests/`.
@@ -19,6 +17,14 @@ uv run pytest
 ```
 
 Without `uv`: `python -m pip install pytest`, then `python -m pytest`.
+
+## Play in the browser
+
+```sh
+uv run python -m casino.web
+```
+
+Then open <http://127.0.0.1:8000>.
 
 ## The interface the tests use
 
